@@ -2,7 +2,7 @@ import React from 'react';
 
 const userOutput = (props) => {
   return(
-    <div className='userOuput'>
+    <div className='userOuput' style={props.style}>
       <p>UserName: {props.userName}</p>
       <p>Quick On the Draw</p>
       <p>What Am I, Chopped Liver?</p>

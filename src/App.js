@@ -4,6 +4,7 @@ import UserInput from './UserInput/UserInput';
 import './App.css';
 
 class App extends Component {
+
   state = {
     userName: 'Jamie'
   };
@@ -21,10 +22,19 @@ class App extends Component {
   }
 
   render() {
+    const style = {
+      width: '60%',
+      backgroundColor: '#99ccff',
+      margin: 'auto',
+      border: '1px solid #eee',
+      boxShadow: '0 2px 3px #ccc',
+      padding: '16px',
+      textAlign: 'center',
+    }
     return (
       <div className="App">
         <UserInput change={this.changeUserName} switchDef={this.switchBackToDefault}/>
-        <UserOutput userName={this.state.userName} />
+        <UserOutput style={style} userName={this.state.userName} />
       </div>
     )
   }
