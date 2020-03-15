@@ -1,9 +1,10 @@
 import React from 'react';
+import './UserInput.css';
 
 const UserInput = (props) => {
   return (
     <div>
-      <button onClick={props.switchDef}>Switch</button><br/>
+      <button className='SwitchButton' onClick={props.switchDef}>Switch</button><br/>
       <input type='text' id='userName' onChange={props.change}/>
     </div>
   )
